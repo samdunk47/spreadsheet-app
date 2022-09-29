@@ -1,7 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './styles.css';
 
-const myFirstElement = <h1>Hello World!</h1>
+const Header = () => {
+  return (
+    <>
+      <h1>Hello Style!</h1>
+      <p>Add a little style!.</p>
+    </>
+  );
+}
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(myFirstElement)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Header />);
